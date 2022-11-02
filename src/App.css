@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0%;
+}
+
+.divContainerLogin {
+  background-image:url(https://img.freepik.com/vector-premium/diseno-carteles-estreno-cine-pantalla-blanco_165143-655.jpg?size=626&ext=jpg&ga=GA1.2.1387266002.1652280797);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divContainer {
+  background-color: blueviolet;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
