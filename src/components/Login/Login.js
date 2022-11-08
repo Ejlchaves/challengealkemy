@@ -1,11 +1,11 @@
 import './Login.css'
 import axios from 'axios'
 import swal from 'sweetalert'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Navigate } from 'react-router-dom'
  
 const Login = () => {
 
-    const Navigate = useNavigate()
+    const redirect = useNavigate()
     const LoginHandler = e => {
         e.preventDefault();
         const email = e.target.email.value
@@ -42,13 +42,22 @@ const Login = () => {
             .then(res =>{
                 const token = res.data.token
                 localStorage.setItem('token', token)
-                Navigate('/listado')
+                redirect('/listado')
             })
 
     }
 
+    if (localStorage.getItem('token') != null) {
+        return (
+            <>
+            { <Navigate to='/listado' /> }
+            </>
+        )
+    }
+   
     return(
         <>
+
         <div className='modalLogin'>
             <h1 className='tituloLogin'>Welcome to AllFilms</h1>
             <h2>Sign In!</h2>

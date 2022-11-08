@@ -1,0 +1,81 @@
+.header {
+    background-color: black;
+    color: white;
+    border-bottom: 20px;
+    padding: 5px;
+}
+
+.navHeader {
+    display: flex;
+    color: white;
+    flex-direction: column;    
+}
+
+.logo {
+    align-self: center;
+    font-size: 3rem;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logoContainer ul {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 5px;
+    align-self: center;
+}
+
+.logoContainer ul li {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    width: 5rem;
+    text-align: center;
+}
+
+.navBtn {
+    border: solid 2px blueviolet;
+    box-shadow: 2px 2px 2px blueviolet;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    width: 70px;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navBtn:hover {
+    color: black;
+    border-radius: 10px;
+    background-color: blueviolet;
+    border: solid 2px white;
+    box-shadow: 2px 2px 2px white;
+    
+}
+
+.searchContainer {
+    text-align: right;
+    align-self: center;
+}
+
+.searchContainer button {
+    width: 70px;
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.searchContainer button:hover {
+    cursor: pointer;
+    background-color: rgba(137, 43, 226, 0.842);
+}
+
+.logoContainer{
+    display: flex;
+    justify-content: space-between;
+}

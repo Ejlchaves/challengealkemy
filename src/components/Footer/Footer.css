@@ -1,0 +1,30 @@
+.footerContainer {
+    background-color: black;
+    color: white;
+    border-bottom: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.listRedes{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; 
+}
+
+.redesBtn {
+    text-decoration: none;
+    color: white;
+}
+
+.redesBtn:hover{
+    color: blueviolet;
+}
+
+.footerContainer p {
+    text-align: center;
+    padding: 5px;
+}
