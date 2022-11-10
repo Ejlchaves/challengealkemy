@@ -1,3 +1,24 @@
+##ChallengeAlkemy Proyecto Actualmente en Desarrollo (Desarrollador: Enzo Julian Chaves) <br>
+
+El siguiente proyecto es parte del proceso de SkillUp brindado por Alkemy.org.
+En el mismo se busca implementar y mostrar el manejo de herramientas de React a traves de un sitio que se alimenta de una API de peliculas.
+Se aplican conceptos de promesas y codigo async para obtener la informacion de los objetos. Utilizacion de condicionales para el Login y la obtencion del token de verificacion de usuario. 
+Manejo de componentes de React para una experiencia fluida.
+
+Para poder visualizar el mismo, pueden acceder a traves del apartado "Deployment" \
+Utilizando las credenciales email: challenge@alkemy.org y password: react.
+
+Tambien podes probar su implementacion descargando el codigo, para lo cual deberas realizar \
+la instalacion correspondiente de React a traves de Node.js utilizando el comando [Create React App] e instalar las siguientes extensiones utilizadas: 
+
+*SweetAlert <Br>
+*Axios <br>
+*Bootstrap <br>
+*ReactRouter <br>
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
