@@ -41,13 +41,13 @@ const Login = () => {
             .post('http://challenge-react.alkemy.org', { email, password })
             .then(res =>{
                 const token = res.data.token
-                localStorage.setItem('token', token)
+                sessionStorage.setItem('token', token)
                 redirect('/listado')
             })
 
     }
 
-    if (localStorage.getItem('token') != null) {
+    if (sessionStorage.getItem('token') != null) {
         return (
             <>
             { <Navigate to='/listado' /> }

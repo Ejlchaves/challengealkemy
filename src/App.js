@@ -6,8 +6,9 @@ import { Routes, Route } from 'react-router-dom'
 import Detail from './components/Detail/Detail'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Fotter'
-import bootstrap from 'bootstrap'
 import './style/style.scss'
+import Contacto from './components/Contacto/Contacto';
+import Resultado from './components/Resultado/Resultado';
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
             <Route path='/' element= {< Login />} />
             <Route path='/listado' element={< Listado />} />
             <Route path='/detail' element={< Detail />} />
+            <Route path='/contacto' element={<Contacto />} />
+            <Route path='/resultado' element={<Resultado />} />
           </Routes>
           <Footer />
           
