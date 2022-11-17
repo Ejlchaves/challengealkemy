@@ -1,23 +1,26 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
 import SearchBar from '../Buscador/Buscador'
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
 
 const Header = () => {
-
     return(
-        <header className='header navbar container-fluid'>
-            <nav className='navHeader container-fluid '>
-                <div className='logoContainer container-fluid justify-content-evenly'>
-                    <Link to='/' className='logo'>AllFilms.Com</Link>
-                    <ul>
-                        <li><Link className='navBtn' to='/'>Home</Link></li>
-                        <li><Link className='navBtn' to='/listado'>List</Link></li>
-                        <li><Link className='navBtn' to='/contacto'>Contact</Link></li>
-                     </ul>
-                    <SearchBar />
-                </div>
-            </nav>
-        </header>
+        <Navbar bg="dark" expand="lg">
+        <Container fluid>
+          <Link to='/' className='logo navbar-brand text-light'>AllFilms.Com</Link>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+            <Link className='navBtn nav-link active text-light m-2' to='/'>Home</Link>
+            <Link className='navBtn nav-link text-light m-2' to='/listado'>List</Link>
+            <Link className='navBtn nav-link text-light m-2' to='/favourites'>Favourites</Link>
+            </Nav>
+            <SearchBar />
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     )
 }
 

@@ -12,10 +12,15 @@
 }
 
 .logo {
+    text-decoration: none;
     align-self: center;
     font-size: 3rem;
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo:hover {
+    text-shadow: 1px 1px 3px white;
 }
 
 .logoContainer ul {
@@ -41,8 +46,9 @@
     box-shadow: 2px 2px 2px blueviolet;
     border-radius: 10px;
     text-decoration: none;
+    text-align: center;
     color: white;
-    width: 70px;
+    /* width: 100px; */
     padding: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

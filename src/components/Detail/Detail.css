@@ -1,5 +1,9 @@
-.btn {
-    background-color: blueviolet;
+.detalleTitulo{
+    text-align: center;
+}
+
+.detalle{
+    gap: 10px;
 }
 
 .btn-fav {
@@ -15,4 +19,12 @@
 
 .btn-fav:hover {
     background-color: rgba(137, 43, 226, 0.87);
+}
+
+.btn-volver{
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    background-color: blueviolet;
+    border-radius: 10px;
 }

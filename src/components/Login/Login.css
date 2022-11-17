@@ -57,3 +57,8 @@ input{
 .btnLogin:hover {
     background-color: rgba(137, 43, 226, 0.751);
 }
+
+Form {
+    border-radius: 10px;
+    padding: 10px;
+}

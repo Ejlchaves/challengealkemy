@@ -2,6 +2,8 @@ import './Login.css'
 import axios from 'axios'
 import swal from 'sweetalert'
 import { useNavigate, Navigate } from 'react-router-dom'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form'
  
 const Login = () => {
 
@@ -56,27 +58,45 @@ const Login = () => {
     }
    
     return(
-        <>
-
-        <div className='modalLogin'>
-            <h1 className='tituloLogin'>Welcome to AllFilms</h1>
-            <h2>Sign In!</h2>
-            <form onSubmit={LoginHandler} className='formContainer'>
-                <label>
-                    <div>Email</div>
-                    <input type='email' name='email'/>
-                </label>
-                <br />
-                <label>
-                    <div>Password</div>
-                    <input type='password' name='password'/>
-                </label>
-                <br />
-                <button type="submit" className='btnLogin'>Submit</button>
-            </form>
-        </div>
-        </>
+        <Form onSubmit={LoginHandler} className='container bg-dark p-2' style={{height:'25rem', width:'25rem'}}>
+                <h1 className='tituloLogin  text-light'>Welcome to AllFilms</h1>
+                <h2 className='text-light'>Sign In!</h2>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label className='text-light'>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" name='email' />
+                <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+                </Form.Text>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label className='text-light'>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password" name='password' />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+                Submit
+            </Button>
+        </Form>
     )
 }
 
 export default Login
+
+
+
+{/* <div className='modalLogin'>
+<h1 className='tituloLogin'>Welcome to AllFilms</h1>
+<h2>Sign In!</h2>
+<form onSubmit={LoginHandler} className='formContainer'>
+    <label>
+        <div>Email</div>
+        <input type='email' name='email'/>
+    </label>
+    <br />
+    <label>
+        <div>Password</div>
+        <input type='password' name='password'/>
+    </label>
+    <br />
+    <button type="submit" className='btnLogin'>Submit</button>
+</form>
+</div> */}

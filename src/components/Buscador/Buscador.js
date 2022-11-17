@@ -18,7 +18,7 @@ const HandleSubmit = (e) => {
 }
 
     return(
-        <form className='searchContainer' onSubmit={HandleSubmit}>
+        <form className='searchContainer d-flex' onSubmit={HandleSubmit}>
             <input className='searchBar' placeholder='Search your film...' name="movieSearch" />
             <button type='submit'>Search</button>
         </form>
