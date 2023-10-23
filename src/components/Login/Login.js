@@ -40,7 +40,7 @@ const Login = () => {
         swal('Haz ingresado correctamente')
         
             axios
-            .post('https://cors-everywhere.herokuapp.com/http://challenge-react.alkemy.org', { email, password })
+            .post('https://cors-anywhere.herokuapp.com/http://challenge-react.alkemy.org', { email, password })
             .then(res =>{
                 const token = res.data.token
                 sessionStorage.setItem('token', token)
@@ -80,23 +80,3 @@ const Login = () => {
 }
 
 export default Login
-
-
-
-{/* <div className='modalLogin'>
-<h1 className='tituloLogin'>Welcome to AllFilms</h1>
-<h2>Sign In!</h2>
-<form onSubmit={LoginHandler} className='formContainer'>
-    <label>
-        <div>Email</div>
-        <input type='email' name='email'/>
-    </label>
-    <br />
-    <label>
-        <div>Password</div>
-        <input type='password' name='password'/>
-    </label>
-    <br />
-    <button type="submit" className='btnLogin'>Submit</button>
-</form>
-</div> */}

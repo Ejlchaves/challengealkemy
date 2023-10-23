@@ -20,7 +20,7 @@ function App() {
         <FavsContextProvider>
           <Header />
           <Routes>
-            <Route path='/' element= {< Login />} />
+            <Route path='/' element= {< Login />}/>
             <Route path='/listado' element={<Listado />} />
             <Route path='/detail' element={<Detail />} />
             <Route path='/contacto' element={<Contacto />} />

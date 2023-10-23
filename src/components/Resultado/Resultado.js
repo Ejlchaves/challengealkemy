@@ -26,7 +26,7 @@ const Resultado = () => {
             })
     })
 
-    if(!token) {
+   if(!token) {
         return ( 
             <>
             {<Navigate to='/' />}

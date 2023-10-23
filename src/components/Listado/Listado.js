@@ -46,8 +46,8 @@ const Listado = (props) =>{
                     <img src= {`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className="card-img-top" /* style={{height: '400px', width:'350px'}} */ alt="Movie_Img" />
                     <button className='btn-fav' onClick={(e) => addRemoveNewFilm(e)} data-movie-id={movie.id}>💜</button>
                     <div className="card-body bg-dark text-light">
-                        <h5 className="card-title">{movie.title}</h5>
-                        <p className="card-text">{movie.overview.substring(0,100)}...</p>
+                        <h5 className="card-title">{movie.title.substring(0,50)}</h5>
+                        <p className="card-text">{movie.overview.substring(0,75)}...</p>
                         <Link to={`/detail?movieID=${movie.id}`} className="btn btn-primary" style={{backgroundcolor: 'blueviolet'}}>View Detail</Link>
                     </div>
                 </div>

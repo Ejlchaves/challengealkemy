@@ -15,7 +15,7 @@ const Header = () => {
             <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
             <Link className='navBtn nav-link active text-light m-2' to='/'>Home</Link>
             <Link className='navBtn nav-link text-light m-2' to='/listado'>List</Link>
-            <Link className='navBtn nav-link text-light m-2' to='/favourites'>Favourites</Link>
+            <Link className='navBtn nav-link text-light m-2' to='/favourites'>Favorites</Link>
             </Nav>
             <SearchBar />
           </Navbar.Collapse>

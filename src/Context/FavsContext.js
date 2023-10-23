@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from "react"
+import { AddFilm } from "../Toast/Toast";
 
 export const FavsContext = createContext([])
 
@@ -45,7 +46,7 @@ export const FavsContextProvider = ({children}) => {
             tempMoviesFavs.push(moviesData)
             localStorage.setItem('favs', JSON.stringify(tempMoviesFavs))
             setFavorites(tempMoviesFavs)
-            console.log('Se Agrego correctamente a la lista de Favoritos')
+            AddFilm()
         } else {
             let removeMovie = tempMoviesFavs.filter(movie => movie.id !== moviesData.id)
             localStorage.setItem('favs', JSON.stringify(removeMovie))
